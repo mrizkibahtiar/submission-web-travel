@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 999;
+    position: fixed;
+    backdrop-filter: blur(50px);
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+nav span {
+    display: block;
+    color: #0C8AEE;
+    font-weight: 800;
+}
+
+nav ul {
+    /* display: flex; */
+    display: none;
+    list-style: none;
+}
+
+.nav-mobile span {
+    display: block;
+    margin-bottom: 3px;
+    width: 20px;
+    height: 4px;
+    background-color: white;
+}
+
+header .head {
+    z-index: -999;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("image/beach.jpg");
+}
+
+header .head .container-general {
+    display: flex;
+    padding-inline: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%);
+    color: white;
+}
+
+.head .container-general h1, .head .container-general p {
+    text-align: center;
+}
+
+.head .container-general h1 {
+    text-transform: uppercase;
+}
+
+.head .container-general .container-button {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.head .container-general .container-button>a {
+    padding-block: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    display: block;
+    width: 75px;
+    height: fit-content;
+    background-color: white;
+    transition: 350ms;
+}
+
+.head .container-general .container-button>a:hover {
+    background-color: #0C8AEE;
+    color: white;
+}
