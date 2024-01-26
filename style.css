@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
 nav {
     z-index: 999;
     position: fixed;
@@ -58,7 +59,7 @@ header .head .container-general {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(.8) blur(.9px);
     color: white;
 }
 
@@ -91,6 +92,52 @@ header .head .container-general {
 }
 
 .head .container-general .container-button>a:hover {
+    background-color: #0C8AEE;
+    color: white;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    height: auto;
+    background-color: #091321;
+    padding: 50px 50px;
+}
+
+#content .first {
+    text-align: center;
+    color: white;
+}
+
+#content .first h2 {
+    margin-bottom: 20px;
+}
+
+#content .first div a {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+#content .first div a span:first-child {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: block;
+    width: 80%;
+    line-height: 50px;
+    height: 50px;
+    background-color: #0A345A;
+}
+
+#content .first div a span:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
     background-color: #0C8AEE;
     color: white;
 }
