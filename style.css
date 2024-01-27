@@ -11,6 +11,7 @@
 /* HEADER */
 nav {
     z-index: 999;
+    top: -1px;
     position: fixed;
     backdrop-filter: blur(50px);
     display: flex;
@@ -104,13 +105,19 @@ main {
     padding: 50px 50px;
 }
 
-#content .first {
+/* MAIN -> ARTICLE 1 */
+
+#content .first, #content .second {
     text-align: center;
     color: white;
 }
 
 #content .first h2 {
     margin-bottom: 20px;
+}
+
+#content .first div p {
+    font-size: .8rem;
 }
 
 #content .first div a {
@@ -140,4 +147,101 @@ main {
     height: 50px;
     background-color: #0C8AEE;
     color: white;
+}
+
+/* MAIN -> ARTICLE 2 */
+
+#content .second {
+    margin-top: 50px;
+}
+
+#content .second p:first-child {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#content .second .container {
+    margin-top: 20px;
+}
+
+#content .second a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #2B3C54;
+    text-align: left;
+    transition: 350ms;
+}
+
+#content .second a:hover {
+    background-color: #0C8AEE;
+}
+
+#content .second a div>p:first-child {
+    font-weight: 100;
+}
+
+#content .second a div>p:last-child {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#content .second a svg {
+    opacity: 0;
+    transition: 350ms;
+}
+
+/* MAIN -> ASIDE */
+main aside {
+    width: 100%;
+    height: fit-content;
+}
+
+
+main aside img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+main aside .serve-container {
+    margin-top: 25px;
+    color: white;
+    text-align: justify;
+}
+
+main aside .serve-container>p:first-child {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+main aside .serve-container>p:nth-child(2) {
+    font-size: .8rem;
+}
+
+main aside .serve-container .count {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+main aside .serve-container .count div>p:first-child {
+    color: #0C8AEE;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+main aside .serve-container .count div>p:last-child {
+    font-size: .8rem;
+}
+
+main aside .serve-container .count div>p {
+    text-align: center;
 }
