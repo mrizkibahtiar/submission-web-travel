@@ -121,6 +121,7 @@ main {
 }
 
 #content .first div a {
+    text-decoration: none;
     margin-top: 20px;
     display: flex;
     width: 100%;
@@ -229,7 +230,12 @@ main aside .serve-container>p:nth-child(2) {
 main aside .serve-container .count {
     margin-top: 10px;
     display: flex;
-    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main aside .serve-container .count>div {
+    margin-bottom: 30px;
 }
 
 main aside .serve-container .count div>p:first-child {
@@ -237,6 +243,8 @@ main aside .serve-container .count div>p:first-child {
     font-weight: 700;
     font-size: 1.3rem;
 }
+
+
 
 main aside .serve-container .count div>p:last-child {
     font-size: .8rem;
