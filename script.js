@@ -1,26 +1,25 @@
-// memunculkan nav
 const checkboxBurger = document.querySelector('.nav-mobile #menu');
 const navActive = document.querySelector('.nav-active');
+
+const translateNavbar = () =>
+    navActive.style.transform = window.innerWidth > 768 ? 'translateX(0px)' : 'translateX(200px)';
+
 checkboxBurger.addEventListener('click', function () {
-    if (checkboxBurger.checked == true) {
-        navActive.style.transform = 'translateX(0px)';
-    } else {
-        navActive.style.transform = 'translateX(200px)';
-    }
-})
+    navActive.style.transform = checkboxBurger.checked ? 'translateX(0px)' : 'translateX(200px)';
+});
 
+translateNavbar()
+window.addEventListener('resize', translateNavbar);
 
-const icon = document.querySelectorAll('#content .second a svg');
-const offer = document.querySelectorAll('#content .second a');
+const icons = document.querySelectorAll('#content .second a svg');
+const offers = document.querySelectorAll('#content .second a');
 
-for (let i = 0; i < offer.length; i++) {
-    offer[i].addEventListener('mouseover', function () {
-        icon[i].style.opacity = '1';
+offers.forEach((offer, i) => {
+    offer.addEventListener('mouseenter', () => {
+        icons[i].classList.add('visible');
     });
 
-    offer[i].addEventListener('mouseout', function () {
-        icon[i].style.opacity = '0';
-    })
-}
-
-
+    offer.addEventListener('mouseleave', () => {
+        icons[i].classList.remove('visible');
+    });
+});
