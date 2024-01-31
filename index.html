@@ -13,22 +13,26 @@
     <header>
         <nav>
             <span>TRAVEL - Q</span>
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Destination</li>
-                <li>Gallery</li>
-                <li>Testimoni</li>
-                <li>Contact</li>
+            <ul class="nav-active">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
             <div class="nav-mobile">
-                <span></span>
-                <span></span>
-                <span></span>
+                <input type="checkbox" name="menu" id="menu">
+                <span class="top"></span>
+                <span class="center"></span>
+                <span class="bottom"></span>
             </div>
         </nav>
 
-        <div class="head">
+        <div class="head" id="home">
             <div class="container-general">
                 <h1>plan your escape destination</h1>
                 <p>Back your get away location & start exploring</p>
@@ -39,7 +43,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="about">
         <div id="content">
             <article class="first">
                 <h2>Let’s See the Destination With Us With You and Your Family</h2>
@@ -114,7 +118,7 @@
             </div>
         </aside>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="container-flex">
             <div class="container-left">
                 <p>TRAVEL - Q</p>
