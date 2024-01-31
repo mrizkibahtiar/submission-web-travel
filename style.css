@@ -51,9 +51,19 @@ nav ul>li {
     transition: 350ms;
 }
 
+nav ul>li a {
+    transition: 350ms;
+    text-decoration: none;
+    color: black;
+}
+
+
 nav ul>li:hover {
-    color: white;
     background-color: #0C8AEE;
+}
+
+nav ul>li a:hover {
+    color: white;
 }
 
 .nav-mobile span {
